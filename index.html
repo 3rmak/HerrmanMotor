@@ -14,7 +14,7 @@
     <body>
 
         <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <input type="checkbox" class="navigation__checkbox" onclick="navCheckboxClick()" id="navi-toggle">
 
             <label for="navi-toggle" class="navigation__button">
                 <span class="navigation__icon">&nbsp;</span>
@@ -22,12 +22,12 @@
 
             <div class="navigation__background">&nbsp;</div>
 
-            <nav class="navigation__nav">
+            <nav class="navigation__nav" id="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#section-service" onclick="navClose()" class="navigation__link"><span>01</span>Service</a></li>
-                    <li class="navigation__item"><a href="#section-about" onclick="navClose()" class="navigation__link"><span>02</span>über uns</a></li>
-                    <li class="navigation__item"><a href="#section-flexibility" onclick="navClose()" class="navigation__link"><span>03</span>informationen</a></li>
-                    <li class="navigation__item"><a href="#section-contacts" onclick="navClose()" class="navigation__link"><span>04</span>KONTAKT</a></li>
+                    <li class="navigation__item"><a href="#section-service" onclick="navigationItemClick()" class="navigation__link"><span>01</span>Service</a></li>
+                    <li class="navigation__item"><a href="#section-about" onclick="navigationItemClick()" class="navigation__link"><span>02</span>über uns</a></li>
+                    <li class="navigation__item"><a href="#section-flexibility" onclick="navigationItemClick()" class="navigation__link"><span>03</span>informationen</a></li>
+                    <li class="navigation__item"><a href="#section-contacts" onclick="navigationItemClick()" class="navigation__link"><span>04</span>KONTAKT</a></li>
                 </ul>
             </nav>
         </div>
