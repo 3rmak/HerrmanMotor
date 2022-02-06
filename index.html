@@ -5,8 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-        <!--<link rel="stylesheet" href="css/icon-font.css">-->
+        <script src="script.js"></script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
 
@@ -25,17 +24,17 @@
 
             <nav class="navigation__nav">
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#section-service" class="navigation__link"><span>01</span>Service</a></li>
-                    <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>02</span>über uns</a></li>
-                    <li class="navigation__item"><a href="#section-flexibility" class="navigation__link"><span>03</span>zusätzliche Information</a></li>
-                    <li class="navigation__item"><a href="#section-contacts" class="navigation__link"><span>04</span>Contact</a></li>
+                    <li class="navigation__item"><a href="#section-service" onclick="navClose()" class="navigation__link"><span>01</span>Service</a></li>
+                    <li class="navigation__item"><a href="#section-about" onclick="navClose()" class="navigation__link"><span>02</span>über uns</a></li>
+                    <li class="navigation__item"><a href="#section-flexibility" onclick="navClose()" class="navigation__link"><span>03</span>informationen</a></li>
+                    <li class="navigation__item"><a href="#section-contacts" onclick="navClose()" class="navigation__link"><span>04</span>KONTAKT</a></li>
                 </ul>
             </nav>
         </div>
 
         <header class="header">
             <div class="header__logo-box">
-                <img src="img/Heavy-Duty-Motorcycle.svg" alt="Logo" class="header__logo">
+                <img src="img/android-chrome-192x192.png" alt="Logo" class="header__logo">
             </div>
 
             <div class="header__text-box">
@@ -60,7 +59,7 @@
                     <div class="col-1-of-2">
                         <h3 class="heading-tertiary u-margin-bottom-small">Touren durch Deutschland, Österreich, Italien, Schweiz, Slowenien</h3>
                         <p class="paragraph">
-                            Bei weiten Anreisen inkl. Motorradtransport zum Startpunkt
+                            Bei weiten Anreisen inkl. Motorradtransport zum Startpunkt. Das heißt, bei Bedarf organisieren wir An und Abreise
                         </p>
 
                         <p class="paragraph">
@@ -72,7 +71,7 @@
                         </p>
 
                         <p class="paragraph">
-                            Freizeitgestaltung apretour: Sport, Adventure, Kultur.
+                            Freizeitgestaltung apretour: Sport, Adventure, Kultur
                         </p>
 
                         <p class="paragraph">
@@ -83,10 +82,12 @@
                         </p>
 
                         <p class="paragraph">
-                            Begleitfahrzeug. Helme und Kleidung immer sicher untergebracht und Bewegungsfreiheit bei
+                            Begleitfahrzeug: Helme und Kleidung immer sicher untergebracht und Bewegungsfreiheit bei
 
                             den Events garantiert. Bei Familien können die Kids im Begleitfahrzeug mitreisen
+                        </p>
 
+                        <p class="paragraph">
                             Anfrage. Besprechen der gewünschten Varianten und Möglichkeiten. Einbringen eigener
                             Ideen und Wünsche
                         </p>
@@ -181,7 +182,7 @@
             <section class="section-flexibility" id="section-flexibility">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
-                        der Anpassungseigenschaft
+                        Der Ablauf
                     </h2>
                 </div>
 
@@ -201,17 +202,16 @@
                         </p>
 
                         <p class="paragraph">
-                            4. m Ziel angekommen, Erörterung des Erlebtenise individuell. Natürlich vorab als Angebot
+                            4. Am Ziel angekommen, Erörterung der Erlebnisse individuell. Natürlich vorab als Angebot
                         </p>
 
-                        <p class="paragraph">
+                        <p>
                             * Urlaub auch mit Kinderbetreuung (ab 6 Jahren). Das heißt während Papa und Mama cruisen, sind die Kinder tagsüber versorgt
                         </p>
                     </div>
 
                     <div class="col-1-of-2">
-                        <div class="flexibility-images">
-                        </div>
+                        <div class="flexibility-images"></div>
                     </div>
                 </div>
             </section>
@@ -223,11 +223,23 @@
 
                             <div class="u-margin-bottom-medium">
                                 <h2 class="heading-secondary">
-                                    Reichen Sie Ihre Bewerbung ein
+                                    Kontakt
                                 </h2>
                             </div>
 
-                            <form action="#" class="form">
+                            <p class="paragraph">
+                                Name: Tobias Herrmann
+                            </p>
+
+                            <p class="paragraph">
+                                E-mail: serviceherrmann@gmx.de
+                            </p>
+
+                            <p class="paragraph">
+                                Telefonnummer: +49 15110550699
+                            </p>
+
+                            <!-- <form action="#" class="form">
                                 <div class="form__group">
                                     <input type="text" class="form__input" placeholder="Full Name" id="name" required>
                                     <label for="name" class="form__label">Name</label>
@@ -260,7 +272,8 @@
                                     <button class="btn btn--green">Senden &rarr;</button>
                                 </div>
 
-                            </form>
+                            </form> -->
+
                         </div>
                     </div>
                 </div>
@@ -268,7 +281,7 @@
         </main>
 
         <footer class="footer">
-            <div class="footer__logo-box">
+            <!-- <div class="footer__logo-box">
 
                 <picture class="footer__logo">
                     <source srcset="img/.png 1x, img/logo-green-small-2x.png 2x"
@@ -276,15 +289,23 @@
                     <img srcset="img/android-chrome-192x192.png 1x, img/android-chrome-512x512.png 2x" alt="Full logo" class="footer__logo" src="img/android-chrome-512x512.png">
                 </picture>
 
-            </div>
+            </div> -->
 
             <div class="row">
-                <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#section-service" class="footer__link">Service</a></li>
+                        <li class="footer__item"><a href="#section-about" class="footer__link">Uber uns</a></li>
+                        <li class="footer__item"><a href="#section-flexibility" class="footer__link">Ablauf</a></li>
+                        <li class="footer__item"><a href="#section-contacts" class="footer__link">Kontakt</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="col-1-of-2">
                     <div class="footer__navigation">
                         <ul class="footer__list">
                             <li class="footer__item"><a href="#" class="footer__link">Service</a></li>
                             <li class="footer__item"><a href="#" class="footer__link">Uber uns</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Contact</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Kontakt</a></li>
                         </ul>
                     </div>
                 </div>
@@ -296,7 +317,7 @@
                             <li class="footer__item"><a href="#" class="footer__link">Facebook</a></li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </footer>
     </body>

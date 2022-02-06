@@ -1146,6 +1146,14 @@ body {
     position: relative
 }
 
+@media all and (min-width:350px) and (max-width: 900px) {
+    .composition {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+  }
+
 .composition__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
@@ -1165,10 +1173,32 @@ body {
     }
 }
 
+@media (min-width:350px) and (max-width: 900px) {
+    .composition__photo {
+        position: static;
+        width: 100%;
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+        margin: 1rem 0rem;
+    }
+
+    .composition__photo--p1 {
+    }
+
+    .composition__photo--p2 {
+    }
+
+    .composition__photo--p3 {
+    }
+
+    .composition__photo--p4 {
+    }
+
+}
+
 .composition__photo--p1 {
 }
 
-@media (max-width: 56.25em) {
+@media (min-width:450px) and (max-width: 56.25em) {
     .composition__photo--p1 {
         top: 0;
         -webkit-transform: scale(1.2);
@@ -1181,7 +1211,7 @@ body {
     top: 15rem;
 }
 
-@media (max-width: 56.25em) {
+@media (min-width:450px) and (max-width: 56.25em) {
     .composition__photo--p2 {
         top: -1rem;
         -webkit-transform: scale(1.3);
@@ -1193,7 +1223,7 @@ body {
     top: 30rem;
 }
 
-@media (max-width: 56.25em) {
+@media (min-width:450px) and (max-width: 56.25em) {
     .composition__photo--p3 {
         left: 0;
         top: 1rem;
@@ -1208,7 +1238,7 @@ body {
     top: 45rem;
 }
 
-@media (max-width: 56.25em) {
+@media (min-width:450px) and (max-width: 56.25em) {
     .composition__photo--p4 {
         top: 0;
         -webkit-transform: scale(1.2);
@@ -1637,16 +1667,22 @@ body {
 }
 
 .footer {
+    margin-top: 2rem;
     background-color: #333;
-    padding-bottom: 5rem;
+    padding: 2rem 0rem 3rem;
     font-size: 1.4rem;
     color: #f7f7f7;
-    /*box-shadow: 0 -1rem #878376;*/
 }
 
-@media (max-width: 56.25em) {
+@media (min-width: 900px) and (max-width: 56.25em) {
     .footer {
         padding: 8rem 0
+    }
+}
+
+@media (min-width: 350px) and (max-width: 900px) {
+    .footer {
+        padding: 3rem 0
     }
 }
 
@@ -1667,7 +1703,6 @@ body {
 }
 
 .footer__navigation {
-    border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block
 }
@@ -1680,11 +1715,12 @@ body {
 }
 
 .footer__list {
-    list-style: none
+    list-style: none;
 }
 
 .footer__item {
-    display: inline-block
+    display: inline-block;
+    text-align: center;
 }
 
 .footer__item:not(:last-child) {
@@ -1703,7 +1739,7 @@ body {
 
 .footer__link:hover,
 .footer__link:active {
-    color: #55c57a;
+    color: #c2b269;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
     -webkit-transform: rotate(5deg) scale(1.3);
     transform: rotate(5deg) scale(1.3)
@@ -1825,7 +1861,7 @@ body {
 (min-resolution: 192dpi) and (min-width: 37em),
 (min-width: 125em) {
     .header {
-        background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg)
+        background-image: linear-gradient(to right bottom, rgba(43, 74, 105, 0.8), rgba(90, 132, 177, 0.8)), url(../img/hero2.jpg);
     }
 }
 
@@ -2100,14 +2136,23 @@ body {
 }
 
 .flexibility-images {
-    height: 45rem;
-    /*-webkit-transform: skewX(7deg);*/
-    /*transform: skewX(7deg);*/
+    height: 36rem;
+    background: linear-gradient(to right top, rgba(43, 74, 105, 0.4), rgba(90, 132, 177, 0.8)) no-repeat;    
+    background-size: 100%;
+    background-image: url("../img/ablauf.JPG");
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+}
 
-    /*background-size: cover;*/
-    /*background-size: cover;*/
-    background: linear-gradient(to right top, rgba(43, 74, 105, 0.4), rgba(90, 132, 177, 0.8));
-    background-image: url("../img/nat-8.jpg");
+@media (min-width: 900px) and (max-width: 1090px) {
+    .flexibility-images {
+        height: 30rem;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 900px) {
+    .flexibility-images {
+        height: 29rem;
+    }
 }
 
 .section-tours {
@@ -2135,7 +2180,7 @@ body {
 
 .section-book {
     padding: 15rem 0;
-    background-image: linear-gradient(to right bottom, #7ed56f, #28b485)
+    /* background-image: linear-gradient(to right bottom, #7ed56f, #28b485) */
 }
 
 @media (max-width: 56.25em) {
@@ -2145,22 +2190,23 @@ body {
 }
 
 .book {
-    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/kontakt.jpg);
     background-size: 100%;
     border-radius: 3px;
+    background-size: cover;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5)
 }
 
 @media (max-width: 75em) {
     .book {
-        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/kontakt.jpg);
         background-size: cover
     }
 }
 
 @media (max-width: 56.25em) {
     .book {
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg)
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/kontakt.jpg);
     }
 }
 
